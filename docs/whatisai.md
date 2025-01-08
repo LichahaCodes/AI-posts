@@ -1,7 +1,7 @@
 ---
 title: What is AI
 layout: home
-
+nav_order: 2
 ---
 
 ## **What is AI?**
