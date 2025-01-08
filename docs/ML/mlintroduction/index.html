@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
+  
+
+    .site-nav > ul.nav-list:first-child > li > a,
+    
+    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(1)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:not(:first-child) a,
+    .site-nav li.external a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > a {
+      font-weight: 600;
+      text-decoration: none;
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg {
+      transform: rotate(-90deg);
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list {
+      display: block;
+    }
+  </style>
+
+  
+
+  
+    <script src="/assets/js/vendor/lunr.min.js"></script>
+  
+
+  <script src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Introduction to ML | LichahaCode AI Posts</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Introduction to ML" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This blog site is dedicated to sharing AI knowledge!" />
+<meta property="og:description" content="This blog site is dedicated to sharing AI knowledge!" />
+<link rel="canonical" href="https://lichahacodes.github.io/AI-posts/docs/ML/mlintroduction/" />
+<meta property="og:url" content="https://lichahacodes.github.io/AI-posts/docs/ML/mlintroduction/" />
+<meta property="og:site_name" content="LichahaCode AI Posts" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Introduction to ML" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"This blog site is dedicated to sharing AI knowledge!","headline":"Introduction to ML","url":"https://lichahacodes.github.io/AI-posts/docs/ML/mlintroduction/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  
+    <div class="side-bar">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
+  LichahaCode AI Posts
+
+</a>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+        <use xlink:href="#svg-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item"><a href="/docs/whatisai/" class="nav-list-link">What is AI</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in ML category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/docs/ML/ML-Category/" class="nav-list-link">ML</a><ul class="nav-list"><li class="nav-list-item"><a href="/docs/ML/mlintroduction/" class="nav-list-link">Introduction to ML</a></li></ul></li></ul>
+  
+</nav>
+
+
+
+
+  
+  
+  <footer class="site-footer">
+    © 2024 LichahaCodes. lichahacodes@gmail.com
+  </footer>
+  
+</div>
+  
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search LichahaCode AI Posts" aria-label="Search LichahaCode AI Posts" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+</div>
+
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb-nav-list">
+    <li class="breadcrumb-nav-list-item"><a href="/docs/ML/ML-Category/">ML</a></li>
+    <li class="breadcrumb-nav-list-item"><span>Introduction to ML</span></li>
+  </ol>
+</nav>
+
+
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <h2 id="what-is-machine-learningml">
+  
+  
+    <a href="#what-is-machine-learningml" class="anchor-heading" aria-labelledby="what-is-machine-learningml"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>What is Machine Learning(ML)?</strong>
+  
+  
+</h2>
+    
+
+<p>Machine Learning (ML) is a branch of artificial intelligence (AI) that enables computers to learn from data and make predictions or decisions withiout being explicitly programmed. This is like teaching a computer how to think by showing it what to learn from. As you can imagine, computers improve their perfomance and reliability on performing a particular task through this exposure and training. For this to be achieved, we develop ML algorithms and models. This approach can be likened to the way humans learn through experience.</p>
+<h3 id="ml-algorithms">
+  
+  
+    <a href="#ml-algorithms" class="anchor-heading" aria-labelledby="ml-algorithms"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>ML Algorithms</strong>
+  
+  
+</h3>
+    
+<p>A Machine Learning (ML) algorithm is a set of mathematical rules or procedures that a computer follows to learn patterns or insights from data. These algorithms process data, identify patterns, and use those patterns to make predictions or decisions. Classical machine learning uses a small number of algorithms in a relatively simple arrangement. Other classical learning algorithms are more complicated. For example, their result might be represented as a position on a multidimensional graph.</p>
+<h3 id="types-of-ml-algorithms">
+  
+  
+    <a href="#types-of-ml-algorithms" class="anchor-heading" aria-labelledby="types-of-ml-algorithms"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>Types of ML Algorithms</strong>
+  
+  
+</h3>
+    
+
+<p>Machine Learning algorithms can be broadly categorized into three types:</p>
+
+<ol>
+  <li><strong>Supervised Learning</strong>: 
+ In supervised learning, the algorithm is trained on a labeled dataset, which means that each training example is paired with an output label. The algorithm learns to make predictions or decisions based on this input output pair.
+    <ul>
+      <li>Examples: Linear Regression, Logistic Regression, Support Vector Machines (SVM).</li>
+    </ul>
+  </li>
+  <li><strong>Unsupervised Learning</strong>: 
+ Here the algorithm is given data without explicit instructions on what to do with it. The goal is to find hidden patterns or structures in the input data. This is usually achieved by grouping, compressing, or organizing it into meaningful ways
+    <ul>
+      <li>Examples: K-Means Clustering, Hierarchical Clustering, Principal Component Analysis (PCA).</li>
+    </ul>
+  </li>
+  <li><strong>Reinforcement Learning</strong>: 
+ In reinforcement learning, the algorithm learns by interacting with an environment. It receives feedback in the form of rewards or penalties and uses this feedback to make better decisions over time.
+    <ul>
+      <li>Examples: Q-Learning, Deep Q-Networks (DQN), Proximal Policy Optimization (PPO).</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Each type of algorithm is suited to different kinds of tasks and has its own strengths and weaknesses. In future posts we will look at some of these algorithms and craft lab examples to see how they work.</p>
+<h3 id="ml-models">
+  
+  
+    <a href="#ml-models" class="anchor-heading" aria-labelledby="ml-models"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>ML Models</strong>
+  
+  
+</h3>
+    
+
+<p>A Machine Learning (ML) model is a mathematical representation of a real-world process. This is so because it is created by training an algorithm on a dataset, allowing the model to learn patterns and relationships within the data. Once trained, the model can make predictions or decisions on new unseen data.</p>
+<h3 id="components-of-a-ml-model">
+  
+  
+    <a href="#components-of-a-ml-model" class="anchor-heading" aria-labelledby="components-of-a-ml-model"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>Components of a ML Model</strong>
+  
+  
+</h3>
+    
+
+<ol>
+  <li><strong>Input Data</strong>: This is data used to train the model. This can include various features or attributes that are relevant to the task at hand.</li>
+  <li><strong>Algorithm</strong>: The method or procedure used to train the model. Usually different algorithms are suited to different types of tasks and data.</li>
+  <li><strong>Parameters</strong>: These internal variables of the model that are adjusted during training to minimize errors and improve the model accuracy.</li>
+  <li><strong>Output</strong>: The predictions or decisions made by the model based on the input data.</li>
+</ol>
+<h3 id="training-a-ml-model">
+  
+  
+    <a href="#training-a-ml-model" class="anchor-heading" aria-labelledby="training-a-ml-model"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>Training a ML Model</strong>
+  
+  
+</h3>
+    
+
+<p>Training a ML model involves feeding it input data and adjusting its parameters to minimize the difference between its predictions and the actual outcomes. This process is typically iterative, with the model being evaluated and refined over multiple cycles.</p>
+<h3 id="evaluating-a-ml-model">
+  
+  
+    <a href="#evaluating-a-ml-model" class="anchor-heading" aria-labelledby="evaluating-a-ml-model"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>Evaluating a ML Model</strong>
+  
+  
+</h3>
+    
+
+<p>Once trained, a ML model is evaluated using a separate dataset to assess its performance. Common evaluation metrics include accuracy, precision, recall and F1 score. The choice usually depends on the specific task and type of model.</p>
+
+<p>In future posts, we will delve deeper into the process of training and evaluating ML models and explore various techniques to improve their performance.</p>
+<h3 id="stay-connected">
+  
+  
+    <a href="#stay-connected" class="anchor-heading" aria-labelledby="stay-connected"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> <strong>Stay Connected</strong>
+  
+  
+</h3>
+    
+
+<p>I hope you found this brief introduction to Machine Learning insightful. If you have any questions or need further clarification, feel free to email me.</p>
+
+<p>Don’t forget to check back regularly for more upcoming posts where we will dive deeper into various ML algorithms, models and practical examples. Stay tuned and keep learning!</p><hr />
+<h4 id="last-updated-05-jan-2025">
+  
+  
+    <a href="#last-updated-05-jan-2025" class="anchor-heading" aria-labelledby="last-updated-05-jan-2025"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Last updated: 05 Jan, 2025.
+  
+  
+</h4>
+
+          
+
+          
+            
+          
+        </main>
+        
+
+
+      </div>
+    </div>
+    
+      
+
+<div class="search-overlay"></div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+
