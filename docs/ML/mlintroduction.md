@@ -7,7 +7,7 @@ order: 1
 
 ## **What is Machine Learning(ML)?**
 
-Machine Learning (ML) is a branch of artificial intelligence (AI) that enables computers to learn from data and make predictions or decisions withiout being explicitly programmed. This is like teaching a computer how to think by showing it what to learn from. As you can imagine, computers improve their perfomance and reliability on performing a particular task through this exposure and training. For this to be achieved, we develop ML algorithms and models. This approach can be likened to the way humans learn through experience.
+Machine Learning (ML) is a branch of artificial intelligence (AI) that enables computers to learn from data and make predictions or decisions without being explicitly programmed. This is like teaching a computer how to think by showing it what to learn from. As you can imagine, computers improve their perfomance and reliability on performing a particular task through this exposure and training. For this to be achieved, we develop ML algorithms and models. This approach can be likened to the way humans learn through experience.
 
 ### **ML Algorithms**
 A Machine Learning (ML) algorithm is a set of mathematical rules or procedures that a computer follows to learn patterns or insights from data. These algorithms process data, identify patterns, and use those patterns to make predictions or decisions. Classical machine learning uses a small number of algorithms in a relatively simple arrangement. Other classical learning algorithms are more complicated. For example, their result might be represented as a position on a multidimensional graph.
